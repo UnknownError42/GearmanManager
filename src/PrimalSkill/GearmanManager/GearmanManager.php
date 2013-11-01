@@ -1,6 +1,6 @@
 <?php
 
-namespace primalskill\GearmanManager;
+namespace PrimalSkill\GearmanManager;
 
 declare(ticks = 1);
 

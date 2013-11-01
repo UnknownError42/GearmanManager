@@ -1,4 +1,3 @@
-#!/usr/bin/env php
 <?php
 
 /**
@@ -10,14 +9,16 @@
  *
  */
 
-namespace primalskill\GearmanManager;
+namespace PrimalSkill\GearmanManager\Pecl;
+
+use PrimalSkill\GearmanManager\GearmanManager;
 
 declare(ticks = 1);
 
 /**
  * Implements the worker portions of the pecl/gearman library
  */
-class Pecl_Manager extends GearmanManager {
+class Manager extends GearmanManager {
 
     /**
      * Starts a worker for the PECL library
@@ -29,7 +30,7 @@ class Pecl_Manager extends GearmanManager {
      */
     protected function start_lib_worker($worker_list, $timeouts = array()) {
 
-        $thisWorker = new GearmanWorker();
+        $thisWorker = new \GearmanWorker();
 
         $thisWorker->addOptions(GEARMAN_WORKER_NON_BLOCKING);
 
