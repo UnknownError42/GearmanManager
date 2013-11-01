@@ -1,3 +1,11 @@
+Porting GearmanManager to work with Composer, also customizing the code base to suit our needs.
+
+
+
+### Original README
+Credit goes to: https://github.com/brianlmoon/GearmanManager
+
+
 Gearman Manager for PHP
 =======================
 
