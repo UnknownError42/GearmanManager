@@ -1,0 +1,25 @@
+{
+    "name": "primalskill/gearmanmanager",
+    "type": "library",
+    "description": "GearmanManager port to work with custom projects and Composer.",
+    "keywords": ["gearman","manager"],
+    "authors": [
+        {
+            "name": "Primal Skill",
+            "email": "george@primalskill.com"
+        },
+        {
+        	"name": "Brian Moon",
+        	"email": "brian@moonspot.net" 
+        }
+    ],
+    "require": {
+    	"php": ">=5.3",
+    	"ext-gearman": ">=1.1.2"
+    },
+    "autoload": {
+        "psr-0": {
+            "PrimalSkill\\GearmanManager": "src/"
+        }
+    }
+}
